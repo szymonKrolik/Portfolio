@@ -18,9 +18,9 @@
                 id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href=" {% url 'index' %} ">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'project-cards' %}">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'project-cards' %}">Projekty</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'cv' %}">CV</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'hire_me' %}">Hire me</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'hire_me' %}">Zatrudnij mnie</a></li>
                 </ul>
             </div>
         </div>
@@ -30,7 +30,7 @@
             <div class="container">
                 <!-- Start: portfolio heading -->
                 <div class="heading">
-                    <h2>Recent Work</h2>
+                    <h2>Ostatnie prace</h2>
                 </div>
                 <!-- End: portfolio heading -->
                 <div class="row">
@@ -88,8 +88,9 @@
     </main>
     <footer class="page-footer">
         <div class="container">
-            <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
-            <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+            <div class="links"><a href="{% url 'cv' %}">O mnie</a><a href="{% url 'hire_me' %}">Zatrudnij mnie</a>
+                <a href="{% url 'project-cards'%}">Projekty</a></div>
+            <div class="social-icons"><a href="https://www.facebook.com/szymon.krolik.58"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/szymon.krolik/"><i class="icon ion-social-instagram-outline"></i></a><a href="https://github.com/szymonKrolik"><i class="icon ion-social-github"></i></a></div>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

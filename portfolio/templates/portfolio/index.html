@@ -23,9 +23,9 @@
                 id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href=" {% url 'index' %} ">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'project-cards' %}">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'project-cards' %}">Projekty</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'cv' %}">CV</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'hire_me' %}">Hire me</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'hire_me' %}">Zatrudnij mnie</a></li>
                 </ul>
             </div>
         </div>
@@ -35,8 +35,8 @@
     <div class="container">
         <div class="avatar" style="background-image:url('../static/assets/img/avatars/me.jpg');"></div>
         <div class="about-me">
-            <p>Hello! I am <strong>Szymon Królik</strong>. I work as back end and front end developer. My motto is “Eat, sleep, code, repeat”. </p><a class="btn btn-outline-primary" role="button" href="#">Hire me</a></div>
-    </div>
+            <p>Cześć! Jestem <strong>Szymon Królik</strong> zajmuję się projektowaniem oraz tworzeniem stron internetowych. Moje motto brzmi: “Eat, sleep, code, repeat”. </p><a class="btn btn-outline-primary" role="button" href="{% url 'hire_me' %}">Zatrudnij mnie</a></div>
+        </div>
 </section>
         <section class="portfolio-block photography">
             <div class="container">
@@ -50,14 +50,14 @@
         <section class="portfolio-block call-to-action border-bottom">
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center content">
-                    <h3>Like what you see?</h3><button class="btn btn-outline-primary btn-lg" type="button">Hire me</button></div>
+                    <h3>Podoba Ci się?</h3><a class="btn btn-outline-primary" role="button" href="{% url 'hire_me' %}">Zatrudnij mnie</a></div>
             </div>
         </section>
         <section class="portfolio-block skills">
             <div class="container">
                 <!-- Start: portfolio heading -->
                 <div class="heading">
-                    <h2>Special Skills</h2>
+                    <h2>Moje umiejętności</h2>
                 </div>
                 <!-- End: portfolio heading -->
                 <div class="row">
@@ -65,8 +65,8 @@
                         <div class="card special-skill-item border-0">
                             <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline"></i></div>
                             <div class="card-body">
-                                <h3 class="card-title">Web Design</h3>
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                <h3 class="card-title">Web developer</h3>
+                                <p class="card-text">Zaprojektuję Twój serwis internetowy od podstaw, spełnię Twoje wymagania tak abyś był zadowolony</p>
                             </div>
                         </div>
                     </div>
@@ -74,8 +74,8 @@
                         <div class="card special-skill-item border-0">
                             <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline"></i></div>
                             <div class="card-body">
-                                <h3 class="card-title">Interface Design</h3>
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                <h3 class="card-title">Back end developer</h3>
+                                <p class="card-text">Zaprojektuję oraz stworzę dla Ciebie system zarządzania treścią, użytkownikami oraz całą stroną. Podejmuję się każdego wyzwania</p>
                             </div>
                         </div>
                     </div>
@@ -83,8 +83,8 @@
                         <div class="card special-skill-item border-0">
                             <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline"></i></div>
                             <div class="card-body">
-                                <h3 class="card-title">Photography and Print</h3>
-                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                <h3 class="card-title">Social Media</h3>
+                                <p class="card-text">Zaplanuje odpowiednie posty, zadbam o pozycjonowanie Twojej strony abyś nie musiał się przejmować brakiem klientów</p>
                             </div>
                         </div>
                     </div>
@@ -96,8 +96,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-12 col-lg-5 offset-lg-1 text">
-                    <h3>Website Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit ultricies, feugiat est sed, efr nunc, vivamus vel accumsan dui. Quisque ac dolor cursus, volutpat nisl vel, porttitor eros.</p>
+                    <h3>Projekt Strony</h3>
+                    <p>Stworzę Twoją unikalną stronę internetową dostosowaną do potrzeb Twoich jak i Twoich klientów. Spełnię Twoje wymagania dotyczące praktycznie każdego aspektu strony.</p>
                 </div>
                 <div class="col-md-12 col-lg-5">
                     <div class="portfolio-laptop-mockup">
@@ -112,8 +112,9 @@
     </section>
     <footer class="page-footer">
         <div class="container">
-            <div class="links"><a href="#">About me</a><a href="#">Contact me</a><a href="#">Projects</a></div>
-            <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+            <div class="links"><a href="{% url 'cv' %}">O mnie</a><a href="{% url 'hire_me' %}">Zatrudnij mnie</a>
+                <a href="{% url 'project-cards'%}">Projekty</a></div>
+            <div class="social-icons"><a href="https://www.facebook.com/szymon.krolik.58"><i class="icon ion-social-facebook"></i></a><a href="https://www.instagram.com/szymon.krolik/"><i class="icon ion-social-instagram-outline"></i></a><a href="https://github.com/szymonKrolik"><i class="icon ion-social-github"></i></a></div>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
