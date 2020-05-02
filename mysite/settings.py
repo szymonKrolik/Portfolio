@@ -25,7 +25,7 @@ SECRET_KEY = 'qc*^)($b33xp*m+!(*tu(iiblsha8*3hft3j6z+&zx+@w@pk92'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sendemail.apps.SendemailConfig',
     'portfolio',
 ]
 
